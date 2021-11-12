@@ -8,7 +8,7 @@ epoch-converter enables conversion between seconds and units of time as well as 
 
 ## Usage
 
-Add `epoch-converter = "0.1.0"` to your `Cargo.toml`
+Add `epoch-converter = "0.1.1"` to your `Cargo.toml`
 
 ### units()
 
