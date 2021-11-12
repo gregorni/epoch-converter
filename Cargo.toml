@@ -1,0 +1,11 @@
+[package]
+name = "epoch-converter"
+description = "epoch-converter enables conversion between seconds and units of time as well as between an epoch timestamp and units of time."
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ellygaytor/epoch-converter"
+repository = "https://github.com/ellygaytor/epoch-converter"
+
+[dependencies]
