@@ -1,7 +1,6 @@
 /// Store various units of time
 #[derive(Debug)]
 pub struct Timestamp {
-
     pub seconds: u64,
     pub minutes: u64,
     pub hours: u64,
