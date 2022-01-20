@@ -45,7 +45,6 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
                 unrounded.floor()
             );
             unrounded.floor() as u64
-
         }
         13 => {
             let unrounded = (seconds / 1000) as f64;
