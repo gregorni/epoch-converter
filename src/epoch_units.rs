@@ -1,5 +1,7 @@
 use crate::timestamp::Timestamp;
 use crate::units::units;
+use log::warn;
+
 
 /// Convert epoch time to units of time on the Gregorian calendar.
 pub fn epoch_units(seconds: u64) -> Timestamp {
@@ -8,7 +10,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         // This code will break in Gregorian calendar year 2286.
         12 => {
             let unrounded = (seconds / 100) as f64;
-            println!(
+            warn!(
                 "{} seems to be in milliseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -17,7 +19,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         13 => {
             let unrounded = (seconds / 1000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in milliseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -26,7 +28,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         14 => {
             let unrounded = (seconds / 10000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in milliseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -35,7 +37,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         15 => {
             let unrounded = (seconds / 100000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in microseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -44,7 +46,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         16 => {
             let unrounded = (seconds / 1000000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in microseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -53,7 +55,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         17 => {
             let unrounded = (seconds / 10000000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in nanoseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -62,7 +64,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         18 => {
             let unrounded = (seconds / 100000000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in nanoseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -71,7 +73,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         19 => {
             let unrounded = (seconds / 1000000000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in nanoseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
@@ -80,7 +82,7 @@ pub fn epoch_units(seconds: u64) -> Timestamp {
         }
         20 => {
             let unrounded = (seconds / 1000000000) as f64;
-            println!(
+            warn!(
                 "{} seems to be in nanoseconds, and will be cut down to {} seconds.",
                 seconds,
                 unrounded.floor()
