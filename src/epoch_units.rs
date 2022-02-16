@@ -2,7 +2,6 @@ use crate::timestamp::Timestamp;
 use crate::units::units;
 use log::warn;
 
-
 /// Convert epoch time to units of time on the Gregorian calendar.
 pub fn epoch_units(seconds: u64) -> Timestamp {
     let seconds_str = format!("{}", seconds);
