@@ -9,3 +9,4 @@ homepage = "https://github.com/ellygaytor/epoch-converter"
 repository = "https://github.com/ellygaytor/epoch-converter"
 
 [dependencies]
+log = "0.4.14"
