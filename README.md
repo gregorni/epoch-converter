@@ -8,7 +8,7 @@ epoch-converter enables conversion between seconds and units of time as well as 
 
 ## Usage
 
-Add `epoch-converter = "0.1.1"` to your `Cargo.toml`
+Add `epoch-converter = "0.1.2"` to your `Cargo.toml`
 
 ### units()
 
@@ -23,7 +23,7 @@ This function converts a number of seconds into various units of time:
 - Years (using 365.24 days per year)
 
 ```rust
-use epoch_converter::units;
+use epoch_converter::units::units;
 
 fn main() {
     let seconds = 63115200;
@@ -46,7 +46,7 @@ This function converts an epoch timestamp into various units of time elapsed sin
 - Years (using 365.24 days per year)
 
 ```rust
-use epoch_converter::epoch_units;
+use epoch_converter::epoch_units::epoch_units;
 
 fn main() {
     let epoch = 1278504000;
