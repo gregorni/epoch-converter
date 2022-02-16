@@ -1,6 +1,6 @@
 mod timestamp;
-mod units;
-mod epoch_units;
+pub mod units;
+pub mod epoch_units;
 
 
 #[cfg(test)]
